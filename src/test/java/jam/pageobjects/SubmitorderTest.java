@@ -56,7 +56,7 @@ public class SubmitorderTest extends BaseTest {
     }
 
 
-    @Test(dependsOnMethods = {"submitOrderTest"})
+    @Test(dependsOnMethods = {"submitOrder"})
     public void orderHistoryTest() throws IOException, InterruptedException {
         // use the same test data (first entry) that submitOrderTest used so the order exists
         List<HashMap<String, String>> data = getJsonData(
